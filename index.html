@@ -6,39 +6,36 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
+      <div class="first-line">
+          <div class="main-logo">
           <img src="img/index-logo.svg" width="368" height="153" alt="Логотип интернет-магазина строительных материалов "Техномарт"">
-        </a>
+        </div>
         <!-- форма для поиска
         <form>
           <p><input type="search" name="q" placeholder="Поиск">
             <input type="submit" class="visually-hidden"></p>
           </form>-->
-        <div class="bookmarks">Закладки
-        </div>
-        <div class="cartcontent">
-          <a href="cart">Корзина</a>
-        </div>
-        <div class="checkout">
-          <a href="checkout" class="btn-cart"> Оформить заказ
+        <a class="bookmarks">Закладки
+        </a>
+        <a class="cartcontent" href="cart">Корзина</a>
+      </a>
+        <a class="checkout" href="checkout"> Оформить заказ
           </a>
         </div>
-        <div class="info">
+        <div class="info-line">
           <p><i>Интернет-магазин строительных материалов и инструментов для ремонта
           </i></p>
-        </div>
-        <div class="contacts">
-          <p>+7 (812) 555-05-55
+          <p class="contacts"> <!--или телефон делать ссылкой?-->
+          +7 (812) 555-05-55</p>
+          <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
-        </div>
-        <ul class="user-navigation">
+          <ul class="user-navigation">
           <li class="login-link">Войти</li>
           <li class="registration">Регистрация</li>
         </ul>
-        <ul class="site-navigation">
+      </div>
+        <nav class="main-navigation">
+          <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="about-us.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -131,16 +128,34 @@
                 <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
                 <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
               </div>
-              <div>
-                <ul class="service-features">
-                  <li>Доставка</li>
-                  <li>Гарантия</li>
-                  <li>Кредит</li>
+              <div class="service-features">
+                <ul>
+                  <li class="deliv">Доставка</li>
+                  <li class="garantee">Гарантия</li>
+                  <li class="credit">Кредит</li>
                 </ul>
-                <!--В этом блоке, я так понимаю, должен быть выездающий список?
-                При  выборе одного из пунктов меню, например, доставка, пользователь видит описание этой фичи?
-                Как это реализовать? Список с ссылками с якорем? Либо в каждый пункт списка вписывать абзац?
-              Но, опираясь на макет, выбранный пункт меню выделен, значит всё-таки ссылки?-->
+                <div class="deliv">
+                  <p><strong>Доставка</strong></p>
+                  <p>Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно!
+                    Ведь мы неплохо заработаем,
+                    поднимая его на ваш этаж!</p>
+                  </div>
+                <div class="garantee">
+                  <p><strong>Гарантия</strong></p>
+                  <p>Если купленный у нас товар поломается или заискрит,
+                    а также в случае пожара, спровоцированного его возгаранием,
+                    вы всегда можете быть уверены в нашей гарантии.
+                    Мы обменяем сгоревший товар на новый.
+                    Дом уж восстановите как-нибудь сами.</p>
+                    </div>
+                    <div class="credit">
+                      <p><strong>Кредит</strong></p>
+                      <p> Залезть в долговую яму стало проще!
+                        Кредитные консультанты придут вам на помощь.
+                        <a class=button>Отправить заявку</a>
+                      </p>
+                    </div>
             </div>
             <article>
               <section class="about-us">
@@ -165,13 +180,14 @@
             </article>
         </main>
         <footer>
-          <a class="main-footer-logo">
-            <img src="img/index-logo.svg" width="368" height="153" alt="Логотип интернет-магазина строительных материалов "Техномарт"">
-          </a>
-          <div class="footer-contacts">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>+7 (812) 555-05-55</p>
+          <div class="footer-info-line">
+          <div class="footer-info">
+            <div class="footer-logo"><img src="img/index-logo.svg" width="368" height="153" alt="Логотип интернет-магазина строительных материалов "Техномарт"">
+          </div>
+        <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="footer-address">+7 (812) 555-05-55</p>
         </div>
+        <div class="footer-nav">
           <nav class="footer-menu">
             <ul class="footer-menu1">
               <li><a href="about-us.html">Компания</a></li>
@@ -187,6 +203,9 @@
               <li><a href="catalog/promo.html">Спецпредложения</a></li>
             </ul>
           </nav>
+        </div>
+      </div>
+      <div class="footer-contacts-line">
           <div class="copyright">
             <p>© 2010–2019 Компания «Техномарт»</p>
             <p>Все права защищены</p>
@@ -204,6 +223,7 @@
             <p>Разработано - </p>
             <p><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
           </div>
+        </div>
         </footer>
   </body>
 </html>
