@@ -30,17 +30,17 @@
           <li class="login-link"><img src="img/icon-login.svg" width="20" height="17">Войти</li>
           <li class="registration">Регистрация</li>
         </ul>
-        <div class="popup-registration">
+        <div class="popup-registration visually-hidden">
           <form class="user" method="post" action="https://echo.htmlacademy.ru">
-      <p>
+      <p class="user-login">
         <label for="user-login">Логин</label>
         <input id="user-login" type="text" name="login" placeholder="Ваше имя">
       </p>
-          <p><label for="user-email">E-mail</label>
+          <p class="user-email"><label for="user-email">E-mail</label>
           <input id="user-email" type="email"
                  name="user-email" placeholder="Введите вашу почту">
           </p>
-      <p>
+      <p class="user-password">
         <label for="user-password">Пароль</label>
         <input id="user-password" type="password"
                name="password" placeholder="Введите пароль">
@@ -48,19 +48,19 @@
       <button type="submit">Зарегистрироваться</button>
     </form>
         </div>
-        <div class="popup-authorithation">
+        <div class="popup-authorithation visually-hidden">
           <form class="user" method="post" action="https://echo.htmlacademy.ru">
-      <p>
+      <p class="user-login">
         <label for="user-login">Логин</label>
         <input id="user-login" type="text"
                name="login" placeholder="Представьтесь, пожалуйста">
       </p>
-      <p>
+      <p class="user-password">
         <label for="user-password">Пароль</label>
         <input id="user-password" type="password"
                name="password" placeholder="Введите пароль">
       </p>
-      <p>
+      <p class="remember">
         <label>
           <input type="checkbox" name="remember">
           Запомнить меня
@@ -215,16 +215,16 @@
                     <img src="img/map3x.jpg">
                   </div>
                   <button type="button" class="write-us-popup">Заблудились? Напишите нам!</button>
-                  <div class="write-us-popup">
+                  <div class="write-us-popup visually-hidden">
                     <form class="write-us-popup" method="post" action="https://echo.htmlacademy.ru">
-                    <p>
+                    <p class="user-name">
                       <label for="name">Ваше имя</label>
-                      <input id="name" type="text" name="name" placeholder="Имя Фамилия"></p>
-                    <p>
+                      <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                    </p>
+                    <p class="user-email">
                       <label for="email">Ваш e-mail:</label>
-                      <input id="emai" type="email" name="email" placeholder="email@example.com"></p>
-                    <p>
-                      <p>
+                      <input id="emai" type="email" name="email" placeholder="email@example.com">
+                    </p>
                         <label for="letter">Текст письма:</label>
                         <textarea id="letter" rows="4" cols="40" placeholder="В свободной форме"></textarea></p>
                       <button type="submit">Отправить</button>

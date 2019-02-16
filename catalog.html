@@ -30,17 +30,17 @@
           <li class="login-link"><img src="img/icon-login.svg" width="20" height="17">Войти</li>
           <li class="registration">Регистрация</li>
         </ul>
-        <div class="popup-registration">
+        <div class="popup-registration visually-hidden">
           <form class="user" method="post" action="https://echo.htmlacademy.ru">
-      <p>
+      <p class="user-login">
         <label for="user-login">Логин</label>
         <input id="user-login" type="text" name="login" placeholder="Ваше имя">
       </p>
-          <p><label for="user-email">E-mail</label>
+          <p class="user-email"><label for="user-email">E-mail</label>
           <input id="user-email" type="email"
                  name="user-email" placeholder="Введите вашу почту">
           </p>
-      <p>
+      <p class="user-password">
         <label for="user-password">Пароль</label>
         <input id="user-password" type="password"
                name="password" placeholder="Введите пароль">
@@ -48,20 +48,20 @@
       <button type="submit">Зарегистрироваться</button>
     </form>
         </div>
-        <div class="popup-authorithation">
+        <div class="popup-authorithation visually-hidden">
           <form class="user" method="post"
           action="https://echo.htmlacademy.ru">
-      <p>
+      <p class="user-login">
         <label for="user-login">Логин</label>
         <input id="user-login" type="text"
                name="login" placeholder="Представьтесь, пожалуйста">
       </p>
-      <p>
+      <p class="user-password">
         <label for="user-password">Пароль</label>
         <input id="user-password" type="password"
                name="password" placeholder="Введите пароль">
       </p>
-      <p>
+      <p class="remember">
         <label>
           <input type="checkbox" name="remember">
           Запомнить меня
@@ -91,13 +91,9 @@
               <li class="breadcrumbs-current">Перфораторы</li>
             </ul>
             <h1>Перфораторы</h1>
-            <!--В качестве обёртки подходит ведь тег section, как и было?
-            Или его нужно дополнительно оборачивать в div?-->
             <div class="filters">
               <section>
         <h2>Фильтр:</h2>
-        <!-- Диапазон выбора цен оборачивать в отдельный тег?
-        Или он будет входить в этот один большой тег form? -->
         <form class="product-filter" method="get" action="https://echo.htmlacademy.ru">
       <fieldset>
         <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -130,11 +126,11 @@
           <li>
             <input type="radio" name="power-source" value="with-rechargeable-batteries"
                       id="filter-with-rechargeable-batteries" checked>
-            <label for="filter-shave">АККУМУЛЯТОРНЫЕ</label>
+            <label for="filter-with-rechargeable-batteries">АККУМУЛЯТОРНЫЕ</label>
           </li>
           <li>
             <input type="radio" name="power-source" value="with-wall-adapter" id="filter-with-wall-adapter">
-            <label for="filter-care">СЕТЕВЫЕ</label>
+            <label for="filter-with-wall-adapter">СЕТЕВЫЕ</label>
           </li>
         </ul>
       </fieldset>
@@ -170,14 +166,11 @@
           <p class="price">
             <a class="price-item" href="catalog/bosh-bfg-6000.html"><img src="img/price-item.svg" width="141" height="38">12500 Р</a>
         </p></article></li>
-        <div class="product-to-cart">
-      <form class="added-to-cart" method="post" action="https://echo.htmlacademy.ru">
-        <label class="added">Товар добавлен в корзину</label>
+        <div class="product-to-cart visually-hidden">
+        <p class="added">Товар добавлен в корзину</p>
         <button type="button" class="checkout">Оформить заказ</button>
         <button type="button" class="continue-shopping">Продолжить покупки</button>
-    </form>
-  </div> <!--Вопрос, как правильно размечать форму о добавлении товара в корзину?
-  Тут инпутов никаких нету.А текст через label? Или p?-->
+    </div>
       <li><article class="catalog-item">
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <p><img src="img/perforator_1.jpg" alt="Перфоратор BOSCH BFG 3000"></p>
