@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,11 +15,11 @@
           <img src="img/logo-technomart.svg" width="111" height="18" alt="Техномарт">
         </div>
         <form class="search" method="post" action="https://echo.htmlacademy.ru">
-          <img src="img/icon-search.svg" width="17" height="17"><input type="search" name="q" placeholder="Поиск:">
+          <input type="search" name="q" placeholder="Поиск:" class="search-ico">
         </form>
-        <a class="bookmarks" href="bookmarks.html"><img src="img/icon-bookmark.svg" width="14" height="16">Закладки
+        <a class="bookmarks" href="bookmarks.html"><img src="img/icon-bookmark.svg" class="bookmarks-icon">Закладки
         </a>
-        <a class="cartcontent" href="cart.html"><img src="img/icon-cart.svg" width="15" height="15">Корзина</a>
+        <a class="cartcontent" href="cart.html"><img src="img/icon-cart.svg" class="cart-icon">Корзина</a>
       </a>
         <a class="checkout" href="checkout.html"> Оформить заказ
           </a>
@@ -75,13 +76,13 @@
       </div>
         <nav class="main-navigation">
           <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="about-us.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="promo.html">Спецпредложения</a></li>
-          <li><a href="shipping.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="nav-index"><a href="index.html">Главная</a></li>
+          <li class="nav-about-company"><a href="about-us.html">Компания</a></li>
+          <li class="nav-catalag"><a href="catalog.html">Каталог</a></li>
+          <li class="nav-news"><a href="news.html">Новости</a></li>
+          <li class="nav-promo"><a href="promo.html">Спецпредложения</a></li>
+          <li class="nav-shipping"><a href="shipping.html">Доставка</a></li>
+          <li class="nav-contacts"><a href="contacts.html">Контакты</a></li>
         </ul>
         </nav>
     </header>
@@ -199,17 +200,17 @@
           </section>
             <article class="info-company">
               <section class="about-us">
-                <p><b>КОМПАНИЯ «ТЕХНОМАРТ»</b></p>
-                <p>Настоящий мужской шоппинг начинается здесь!
+                <p class="company-name">КОМПАНИЯ «ТЕХНОМАРТ»</p>
+                <p class="company-description">Настоящий мужской шоппинг начинается здесь!
                   Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-                  <p> Мы можем доставить ваш товар в самые отдаленные точки России!</p>
-                  <p>Техномарт работает со многими транспортными компаниями:</p>
+                  <p class="company-description"> Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+                  <p class="company-description">Техномарт работает со многими транспортными компаниями:</p>
                   <ul class="our-delivery">
-                    <li>Деловые линии</li>
-                    <li>Автотрейдинг</li>
-                    <li>ЖелДорЭкспедиция</li>
+                    <li class="delivery-item">Деловые линии</li><br>
+                    <li class="delivery-item">Автотрейдинг</li><br>
+                    <li class="delivery-item">ЖелДорЭкспедиция</li>
                   </ul>
-                  <a class="catalog button" href="about-us.html">Подробнее о компании</a>
+                  <a class="button" href="about-us.html">Подробнее о компании</a>
                 </section>
                 <section class="contacts-map">
                   <p><strong>КОНТАКТЫ</strong></p>
