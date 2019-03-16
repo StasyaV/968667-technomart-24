@@ -18,9 +18,9 @@
         <form class="search" method="post" action="https://echo.htmlacademy.ru">
           <input type="search" name="q" placeholder="Поиск:" class="search-ico">
         </form>
-        <div class="bookmarks"><a href="bookmarks.html"><img src="img/icon-bookmark.svg">Закладки
+        <div class="bookmarks"><a href="bookmarks.html">Закладки
         </a></div>
-        <div class="cartcontent"><a href="cart.html"><img src="img/icon-cart.svg" class="cart-icon">Корзина</a>
+        <div class="cartcontent"><a href="cart.html">Корзина</a>
       </a></div>
         <div class="checkout"><a href="checkout.html"> Оформить заказ
         </a></div>
@@ -32,52 +32,52 @@
           <p>Интернет-магазин строительных материалов и инструментов для ремонта
           </p></div>
           <div class="contact-info">
-            <a class="contacts" href ="+7 (812) 555-05-55"><img src="img/icon-phone.svg" width="19" height="19">+7 (812) 555-05-55</a>
+            <a class="contacts" href ="+78125550555">+7 (812) 555-05-55</a>
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
         <div class="user-nav">
-            <button type="button" class="white-button login-link"><img src="img/icon-login.svg" width="20" height="17">Войти</button>
+            <button type="button" class="white-button login-link">Войти</button>
             <button type="button" class="white-button registration">Регистрация</button>
       </div>
-        <div class="popup-registration visually-hidden">
-          <form class="user" method="post" action="https://echo.htmlacademy.ru">
-      <label class="user-login">
-        <p>Логин</p>
-        <input type="text" name="login" placeholder="Ваше имя">
-      </label>
-          <label class="user-email">
-            <p>E-mail</p>
-          <input type="email"
-                 name="user-email" placeholder="Введите вашу почту">
-          </label>
-      <label class="user-password">
-        <p>Пароль</p>
-        <input type="password"
-               name="password" placeholder="Введите пароль">
-      </label>
-      <button type="submit">Зарегистрироваться</button>
-    </form>
-        </div>
-        <div class="popup-authorithation visually-hidden">
-          <form class="user" method="post"
-          action="https://echo.htmlacademy.ru">
-      <label class="user-login">
-        <p>Логин</p>
-        <input type="text"
-               name="login" placeholder="Представьтесь, пожалуйста">
-      </label>
-      <label class="user-password">
-        <p>Пароль</p>
-        <input type="password"
-               name="password" placeholder="Введите пароль">
-      </label>
-      <label class="remember">
-        <p>Запомнить меня</p>
-          <input type="checkbox" name="remember">
-      </label>
-      <button type="submit">Войти</button>
-    </form>
+      <div class="popup-registration visually-hidden">
+        <form class="user" method="post" action="https://echo.htmlacademy.ru">
+    <label class="user-login">
+      <input type="text" name="login" placeholder="Ваше имя">
+      <span>Логин</span>
+    </label>
+        <label class="user-email">
+        <input type="email"
+               name="user-email" placeholder="Введите вашу почту">
+        <span>E-mail</span>
+        </label>
+    <label class="user-password">
+      <input type="password"
+             name="password" placeholder="Введите пароль">
+      <span>Пароль</span>
+    </label>
+    <button type="submit">Зарегистрироваться</button>
+  </form>
+      </div>
+      <div class="popup-authorithation visually-hidden">
+        <form class="user" method="post"
+        action="https://echo.htmlacademy.ru">
+    <label class="user-login">
+      <input type="text"
+             name="login" placeholder="Представьтесь, пожалуйста">
+      <span>Логин</span>
+    </label>
+    <label class="user-password">
+      <input type="password"
+             name="password" placeholder="Введите пароль">
+      <span>Пароль</span>
+    </label>
+    <label class="remember">
+        <input type="checkbox" name="remember">
+        <span>Запомнить меня</span>
+    </label>
+    <button type="submit">Войти</button>
+  </form>
       </div>
     </div>
       <div class="navigation center-container">
@@ -90,10 +90,11 @@
           <li class="main-nav"><a href="promo.html">Спецпредложения</a></li>
           <li class="main-nav"><a href="shipping.html">Доставка</a></li>
           <li class="main-nav"><a href="contacts.html">Контакты</a></li>
-        </ul>
-        </nav>
+          </ul>
+          </nav>
+        </div>
       </div>
-      </div>
+    </div>
     </header>
     <main class="maincontent center-container">
       <ul class="breadcrumbs">
@@ -108,54 +109,54 @@
                 <section>
         <h2>Фильтр:</h2>
         <form class="product-filter" method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
+      <fieldset class="model">
         <legend>ПРОИЗВОДИТЕЛИ:</legend>
         <ul>
           <li>
             <label class="filter-by-bosh">
-              <p>BOSH</p>
               <input type="checkbox" name="bosh" checked>
+              <span>BOSH</span>
             </label>
           </li>
           <li>
             <label class="filter-by-interskol">
-              <p>ИНТЕРСКОЛ</p>
               <input type="checkbox" name="interskol">
+              <span>ИНТЕРСКОЛ</span>
             </label>
           </li>
           <li>
             <label class="filter-by-makita">
-              <p>MAKITA</p>
               <input type="checkbox" name="makita"checked>
+              <span>MAKITA</span>
             </label>
           </li>
           <li>
             <label class="filter-by-dewolt">
-              <p>DEWOLT</p>
             <input type="checkbox" name="dewalt">
+            <span>DEWOLT</span>
             </label>
           </li>
           <li>
             <label class="filter-by-hitachi">
-              <p>HITACHI</p>
-            <input type="checkbox" name="hitachi">
+              <input type="checkbox" name="hitachi">
+              <span>HITACHI</span>
             </label>
           </li>
         </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="power">
         <legend>ПИТАНИЕ:</legend>
         <ul>
           <li>
             <label class="rechargeable">
-              <p>АККУМУЛЯТОРНЫЕ</p>
             <input type="radio" name="power-source" value="with-rechargeable-batteries" checked>
+            <span>АККУМУЛЯТОРНЫЕ</span>
             </label>
           </li>
           <li>
             <label class="wall-adapter">
-              <p>СЕТЕВЫЕ</p>
             <input type="radio" name="power-source" value="with-wall-adapter">
+            <span>СЕТЕВЫЕ</span>
             </label>
           </li>
         </ul>
@@ -168,78 +169,77 @@
         <ul>
           <li><article class="catalog-item">
           <h3>Перфоратор BOSCH BFG 3000</h3>
-          <p><img src="img/perforator_1.jpg" width="100%" alt="Перфоратор BOSCH BFG 3000"></p>
+          <p><img src="img/perforator_1.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 3000"></p>
           <p class="old-price">22500 Р</p>
-          <p><a class="price-item" href="catalog/bosh-bfg-3000.html">15500 Р</a></p>
+          <p class="price"><a class="price-item" href="catalog/bosh-bfg-3000.html">15500 Р</a></p>
         </article></li>
         <li><article class="catalog-item">
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p><img src="img/perforator_2.jpg" width="100%" alt="Перфоратор BOSCH BFG 6000"></p>
+          <p><img src="img/perforator_2.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 6000"></p>
           <p class="old-price">30500 Р</p>
-          <a class="price-item" href="catalog/bosh-bfg-6000.html">25500 Р</a>
+          <p class="price"><a class="price-item" href="catalog/bosh-bfg-6000.html">25500 Р</a></p>
           </article></li>
           <li><article class="catalog-item new">
           <h3>Перфоратор BOSCH BFG 2000</h3>
-          <p><img src="img/perforator_1.jpg" width="100%" alt="Перфоратор BOSCH BFG 2000"></p>
+          <p><img src="img/perforator_1.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 2000"></p>
+          <p class="old-price"></p>
           <p class="price">
             <a class="price-item" href="catalog/bosh-bfg-6000.html">12500 Р</a>
         </p></article></li>
         <li><article class="catalog-item">
           <h3>Перфоратор BOSCH BFG 2000</h3>
-          <p><img src="img/perforator_1.jpg" width="100%" alt="Перфоратор BOSCH BFG 2000"></p>
-          <div class="buy-now visually-hidden">
-            <p><button type="button" class="add-to-cart" href="#"><img src="img/icon-cart.svg">Купить</button></p>
-            <p><button type="button" class="bookmarks-button" href="bookmarks.html">В закладки</button></p>
-          </div>
+          <p><img src="img/perforator_1.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 2000"></p>
+          <p class="old-price"></p>
           <p class="price">
             <a class="price-item" href="catalog/bosh-bfg-6000.html">12500 Р</a>
         </p></article></li>
-        <div class="product-to-cart visually-hidden">
-        <p class="added">Товар добавлен в корзину</p>
-        <button type="button" class="checkout">Оформить заказ</button>
-        <button type="button" class="continue-shopping">Продолжить покупки</button>
-    </div>
         <li><article class="catalog-item new">
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p><img src="img/perforator_2.jpg" width="100%" alt="Перфоратор BOSCH BFG 6000"></p>
+          <p><img src="img/perforator_2.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 6000"></p>
           <p class="old-price">30500 Р</p>
-          <a class="price-item" href="catalog/bosh-bfg-6000.html">25500 Р</a>
+        <p class="price"><a class="price-item" href="catalog/bosh-bfg-6000.html">25500 Р</a></p>
         </article></li>
         <li><article class="catalog-item new">
           <h3>Перфоратор BOSCH BFG 2000</h3>
-          <p><img src="img/perforator_1.jpg" width="100%" alt="Перфоратор BOSCH BFG 2000"></p>
-          <a class="price-item" href="catalog/bosh-bfg-6000.html">12500 Р</a>
+          <p><img src="img/perforator_1.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 2000"></p>
+          <p class="old-price"></p>
+          <p class="price"><a class="price-item" href="catalog/bosh-bfg-6000.html">12500 Р</a></p>
         </article></li>
         <li><article class="catalog-item">
           <h3>Перфоратор BOSCH BFG 3000</h3>
-          <p><img src="img/perforator_1.jpg" width="100%" alt="Перфоратор BOSCH BFG 3000"></p>
+          <p><img src="img/perforator_1.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 3000"></p>
           <p class="old-price">22500 Р</p>
-          <a class="price-item" href="catalog/bosh-bfg-6000.html">12500 Р</a>
+          <p class="price"><a class="price-item" href="catalog/bosh-bfg-6000.html">12500 Р</a></p>
         </article></li>
         <li><article class="catalog-item new">
           <h3>Перфоратор BOSCH BFG 6000</h3>
-          <p><img src="img/perforator_2.jpg" width="100%" alt="Перфоратор BOSCH BFG 6000"></p>
+          <p><img src="img/perforator_2.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 6000"></p>
           <p class="old-price">30500 Р</p>
-          <a class="price-item" href="catalog/bosh-bfg-6000.html">25500 Р</a>
+          <p class="price"><a class="price-item" href="catalog/bosh-bfg-6000.html">25500 Р</a></p>
         </article></li>
         <li><article class="catalog-item">
           <h3>Перфоратор BOSCH BFG 2000</h3>
-          <p><img src="img/perforator_1.jpg" width="100%" alt="Перфоратор BOSCH BFG 2000"></p>
-          <a class="price-item" href="catalog/bosh-bfg-2000.html">12500 Р</a>
-        </article></li>
-        <li><article class="catalog-item">
-          <h3>Перфоратор BOSCH BFG 2000</h3>
-          <p><img src="img/perforator_1.jpg" width="100%" alt="Перфоратор BOSCH BFG 2000"></p>
-          <a class="price-item" href="catalog/bosh-bfg-2000.html">12500 Р</a>
+          <p><img src="img/perforator_1.jpg" class="catalog-item-image" alt="Перфоратор BOSCH BFG 2000"></p>
+          <p class="old-price"></p>
+          <p class="price"><a class="price-item" href="catalog/bosh-bfg-2000.html">12500 Р</a></p>
         </article></li>
       </ul>
+      <div class="buy-now">
+        <p><button type="button" class="add-to-cart">Купить</button></p>
+        <p><button type="button" class="bookmarks-button">В закладки</button></p>
+      </div>
+      <div class="product-to-cart visually-hidden">
+      <p class="added">Товар добавлен в корзину</p>
+      <button type="button" class="checkout">Оформить заказ</button>
+      <button type="button" class="continue-shopping">Продолжить покупки</button>
+      </div>
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a>2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
-        </div>
+      </div>
       </div>
         <article class="page-description">
           <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
@@ -275,7 +275,6 @@
         </nav>
       </div>
     </div>
-  </div>
     <div class="footer-development">
     <div class="footer-contacts-line center-container">
         <div class="copyright">
@@ -283,9 +282,9 @@
           Все права защищены</p>
         </div>
         <div class="social-icon">
-          <a class="social-icon-vk" href="vk.com" aria-label="Техномарт во Вконтакте"><img src="img/icon-vk.svg" width="41" height="42"></a>
-          <a class="social-icon-fb" href="facebook.com" aria-label="Техномарт в Фейсбук"><img src="img/icon-fb.svg" width="42" height="42"></a>
-          <a class="social-icon-insta" href="instagram.com" aria-label="Техномарт в Инстаграмм"><img src="img/icon-insta.svg" width="42" height="42"></a>
+          <a class="social-icon-vk" href="vk.com" aria-label="Техномарт во Вконтакте"></a>
+          <a class="social-icon-fb" href="facebook.com" aria-label="Техномарт в Фейсбук"></a>
+          <a class="social-icon-insta" href="instagram.com" aria-label="Техномарт в Инстаграмм"></a>
         </div>
         <div class="write-us">
           <p>Обратная связь:<br>
