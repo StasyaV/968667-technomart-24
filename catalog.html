@@ -35,9 +35,13 @@
           <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
-        <div class="user-nav">
-            <button type="button" class="white-button login-link">Войти</button>
-            <button type="button" class="white-button registration">Регистрация</button>
+        <div class="user-nav-login">
+              <button type="button" class="log-out">Равшан Джамшутович</button>
+            <div class="user-nav-item">
+            <a class="user-nav-orders" href="#">Мои заказы</a>
+            <a class="user-nav-account" href="#">Личный кабинет</a>
+            </div>
+        </div>
       </div>
     </div>
         <nav class="center-container">
@@ -51,13 +55,12 @@
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
-      </div>
     </header>
     <main>
       <ul class="breadcrumbs center-container">
               <li class="breadcrumbs-item home"><a href="index.html"><img src="img/icon-home.svg" width="14" height="12" alt="Главная"></a></li>
-              <li><a class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
-              <li><a class="breadcrumbs-item" href="catalog/instruments.html">Инструмент</a></li>
+              <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+              <li class="breadcrumbs-item"><a href="catalog/instruments.html">Инструмент</a></li>
               <li class="breadcrumbs-current"><a>Перфораторы</a></li>
             </ul>
             <div class="center-container">
@@ -154,9 +157,9 @@
         <div class="sort">
           <div class="sort-name"><p>Сортировка</p></div>
           <div class="choose">
-            <a href="#" class="choose by-price choosen">По цене</a>
-            <a href="#" class="choose by-type">По типу</a>
-            <a href="#" class="choose by-function">По функционалу</a>
+            <a href="#" class="choose__link by-price choosen">По цене</a>
+            <a href="#" class="choose__link by-type">По типу</a>
+            <a href="#" class="choose__link by-function">По функционалу</a>
             </div>
             <div class="sort-up-down">
               <a href="#" class="up-down choosen"></a>
@@ -218,12 +221,11 @@
           <p><button type="button" class="bookmarks-button">В закладки</button></p>
         </div>
       </article></li>
-        <li><article class="catalog-item new">
+        <li><article class="catalog-item">
           <p><img src="img/perforator_1.jpg" class="catalog-item-image" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></p>
             <h3>Перфоратор BOSCH BFG 2000</h3>
           <p class="old-price"></p>
           <p class="price"><a class="price-item" href="catalog/bosh-bfg-6000.html">12500 Р.</a></p>
-          <div class="flag flag-new">новинка</div>
           <div class="buy-now">
             <p><button type="button" class="add-to-cart">Купить</button></p>
             <p><button type="button" class="bookmarks-button">В закладки</button></p>
